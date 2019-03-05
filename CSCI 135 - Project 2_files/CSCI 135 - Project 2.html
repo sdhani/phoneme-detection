@@ -1,0 +1,1126 @@
+<!DOCTYPE html>
+<!-- saved from url=(0125)https://bbhosted.cuny.edu/bbcswebdav/pid-34705954-dt-content-rid-163434166_1/courses/HTR01_CSCI_13500_02_1182_1/project2.html -->
+<html lang="en" class="gr__bbhosted_cuny_edu"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+
+<link href="./CSCI 135 - Project 2_files/css" rel="stylesheet"> 
+
+<!-- MathJax -->
+<script type="text/javascript" async="" src="./CSCI 135 - Project 2_files/MathJax.js">
+</script>
+
+<style type="text/css">
+/*! normalize.css v7.0.0 | MIT License | github.com/necolas/normalize.css */
+
+/* Document
+   ========================================================================== */
+
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in
+ *    IE on Windows Phone and in iOS.
+ */
+
+html {
+  line-height: 1.15; /* 1 */
+  -ms-text-size-adjust: 100%; /* 2 */
+  -webkit-text-size-adjust: 100%; /* 2 */
+}
+
+/* Sections
+   ========================================================================== */
+
+/**
+ * Remove the margin in all browsers (opinionated).
+ */
+
+body {
+  margin: 0;
+}
+
+/**
+ * Add the correct display in IE 9-.
+ */
+
+article,
+aside,
+footer,
+header,
+nav,
+section {
+  display: block;
+}
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/* Grouping content
+   ========================================================================== */
+
+/**
+ * Add the correct display in IE 9-.
+ * 1. Add the correct display in IE.
+ */
+
+figcaption,
+figure,
+main { /* 1 */
+  display: block;
+}
+
+/**
+ * Add the correct margin in IE 8.
+ */
+
+figure {
+  margin: 1em 40px;
+}
+
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+
+hr {
+  box-sizing: content-box; /* 1 */
+  height: 0; /* 1 */
+  overflow: visible; /* 2 */
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+
+pre {
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
+}
+
+/* Text-level semantics
+   ========================================================================== */
+
+/**
+ * 1. Remove the gray background on active links in IE 10.
+ * 2. Remove gaps in links underline in iOS 8+ and Safari 8+.
+ */
+
+a {
+  background-color: transparent; /* 1 */
+  -webkit-text-decoration-skip: objects; /* 2 */
+}
+
+/**
+ * 1. Remove the bottom border in Chrome 57- and Firefox 39-.
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+
+abbr[title] {
+  border-bottom: none; /* 1 */
+  text-decoration: underline; /* 2 */
+  text-decoration: underline dotted; /* 2 */
+}
+
+/**
+ * Prevent the duplicate application of `bolder` by the next rule in Safari 6.
+ */
+
+b,
+strong {
+  font-weight: inherit;
+}
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+
+code,
+kbd,
+samp {
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
+}
+
+/**
+ * Add the correct font style in Android 4.3-.
+ */
+
+dfn {
+  font-style: italic;
+}
+
+/**
+ * Add the correct background and color in IE 9-.
+ */
+
+mark {
+  background-color: #ff0;
+  color: #000;
+}
+
+/**
+ * Add the correct font size in all browsers.
+ */
+
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/* Embedded content
+   ========================================================================== */
+
+/**
+ * Add the correct display in IE 9-.
+ */
+
+audio,
+video {
+  display: inline-block;
+}
+
+/**
+ * Add the correct display in iOS 4-7.
+ */
+
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+/**
+ * Remove the border on images inside links in IE 10-.
+ */
+
+img {
+  border-style: none;
+}
+
+/**
+ * Hide the overflow in IE.
+ */
+
+svg:not(:root) {
+  overflow: hidden;
+}
+
+/* Forms
+   ========================================================================== */
+
+/**
+ * 1. Change the font styles in all browsers (opinionated).
+ * 2. Remove the margin in Firefox and Safari.
+ */
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: sans-serif; /* 1 */
+  font-size: 100%; /* 1 */
+  line-height: 1.15; /* 1 */
+  margin: 0; /* 2 */
+}
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+
+button,
+input { /* 1 */
+  overflow: visible;
+}
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+
+button,
+select { /* 1 */
+  text-transform: none;
+}
+
+/**
+ * 1. Prevent a WebKit bug where (2) destroys native `audio` and `video`
+ *    controls in Android 4.
+ * 2. Correct the inability to style clickable types in iOS and Safari.
+ */
+
+button,
+html [type="button"], /* 1 */
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button; /* 2 */
+}
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/**
+ * Correct the padding in Firefox.
+ */
+
+fieldset {
+  padding: 0.35em 0.75em 0.625em;
+}
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+
+legend {
+  box-sizing: border-box; /* 1 */
+  color: inherit; /* 2 */
+  display: table; /* 1 */
+  max-width: 100%; /* 1 */
+  padding: 0; /* 3 */
+  white-space: normal; /* 1 */
+}
+
+/**
+ * 1. Add the correct display in IE 9-.
+ * 2. Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+
+progress {
+  display: inline-block; /* 1 */
+  vertical-align: baseline; /* 2 */
+}
+
+/**
+ * Remove the default vertical scrollbar in IE.
+ */
+
+textarea {
+  overflow: auto;
+}
+
+/**
+ * 1. Add the correct box sizing in IE 10-.
+ * 2. Remove the padding in IE 10-.
+ */
+
+[type="checkbox"],
+[type="radio"] {
+  box-sizing: border-box; /* 1 */
+  padding: 0; /* 2 */
+}
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+
+[type="search"] {
+  -webkit-appearance: textfield; /* 1 */
+  outline-offset: -2px; /* 2 */
+}
+
+/**
+ * Remove the inner padding and cancel buttons in Chrome and Safari on macOS.
+ */
+
+[type="search"]::-webkit-search-cancel-button,
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+
+::-webkit-file-upload-button {
+  -webkit-appearance: button; /* 1 */
+  font: inherit; /* 2 */
+}
+
+/* Interactive
+   ========================================================================== */
+
+/*
+ * Add the correct display in IE 9-.
+ * 1. Add the correct display in Edge, IE, and Firefox.
+ */
+
+details, /* 1 */
+menu {
+  display: block;
+}
+
+/*
+ * Add the correct display in all browsers.
+ */
+
+summary {
+  display: list-item;
+}
+
+/* Scripting
+   ========================================================================== */
+
+/**
+ * Add the correct display in IE 9-.
+ */
+
+canvas {
+  display: inline-block;
+}
+
+/**
+ * Add the correct display in IE.
+ */
+
+template {
+  display: none;
+}
+
+/* Hidden
+   ========================================================================== */
+
+/**
+ * Add the correct display in IE 10-.
+ */
+
+[hidden] {
+  display: none;
+}
+
+body {margin:auto; max-width:45em; line-height:180%; color:#222222; font-family: 'Arial', sans-serif; }
+
+h1 { padding-top:2em; padding-bottom:1em; }
+
+h2 { padding-top:2em; padding-bottom:1em; }
+
+h3, h4, h5, h6 {font-size:1em}
+
+h1, h2, h3, h4, h5, h6 {  font-family: 'Poppins', sans-serif;}
+
+code {padding-left:0.5em; padding-right:0.5em; border-style:solid; border-width:1px; border-radius:0.5em; border-color:#f8f8f8; background:#f8f8f8;}
+
+pre>code {padding-left:0em; padding-right:0em; border-style:none; background:none;}
+
+pre {margin-left: 4em;}
+
+img.centered {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: auto;
+    float: none!important;
+}
+.highlight table td { padding: 5px; }
+.highlight table pre { margin: 0; }
+.highlight .cm {
+  color: #999988;
+  font-style: italic;
+}
+.highlight .cp {
+  color: #999999;
+  font-weight: bold;
+}
+.highlight .c1 {
+  color: #999988;
+  font-style: italic;
+}
+.highlight .cs {
+  color: #999999;
+  font-weight: bold;
+  font-style: italic;
+}
+.highlight .c, .highlight .cd {
+  color: #999988;
+  font-style: italic;
+}
+.highlight .err {
+  color: #a61717;
+  background-color: #e3d2d2;
+}
+.highlight .gd {
+  color: #000000;
+  background-color: #ffdddd;
+}
+.highlight .ge {
+  color: #000000;
+  font-style: italic;
+}
+.highlight .gr {
+  color: #aa0000;
+}
+.highlight .gh {
+  color: #999999;
+}
+.highlight .gi {
+  color: #000000;
+  background-color: #ddffdd;
+}
+.highlight .go {
+  color: #888888;
+}
+.highlight .gp {
+  color: #555555;
+}
+.highlight .gs {
+  font-weight: bold;
+}
+.highlight .gu {
+  color: #aaaaaa;
+}
+.highlight .gt {
+  color: #aa0000;
+}
+.highlight .kc {
+  color: #000000;
+  font-weight: bold;
+}
+.highlight .kd {
+  color: #000000;
+  font-weight: bold;
+}
+.highlight .kn {
+  color: #000000;
+  font-weight: bold;
+}
+.highlight .kp {
+  color: #000000;
+  font-weight: bold;
+}
+.highlight .kr {
+  color: #000000;
+  font-weight: bold;
+}
+.highlight .kt {
+  color: #445588;
+  font-weight: bold;
+}
+.highlight .k, .highlight .kv {
+  color: #000000;
+  font-weight: bold;
+}
+.highlight .mf {
+  color: #009999;
+}
+.highlight .mh {
+  color: #009999;
+}
+.highlight .il {
+  color: #009999;
+}
+.highlight .mi {
+  color: #009999;
+}
+.highlight .mo {
+  color: #009999;
+}
+.highlight .m, .highlight .mb, .highlight .mx {
+  color: #009999;
+}
+.highlight .sb {
+  color: #d14;
+}
+.highlight .sc {
+  color: #d14;
+}
+.highlight .sd {
+  color: #d14;
+}
+.highlight .s2 {
+  color: #d14;
+}
+.highlight .se {
+  color: #d14;
+}
+.highlight .sh {
+  color: #d14;
+}
+.highlight .si {
+  color: #d14;
+}
+.highlight .sx {
+  color: #d14;
+}
+.highlight .sr {
+  color: #009926;
+}
+.highlight .s1 {
+  color: #d14;
+}
+.highlight .ss {
+  color: #990073;
+}
+.highlight .s {
+  color: #d14;
+}
+.highlight .na {
+  color: #008080;
+}
+.highlight .bp {
+  color: #999999;
+}
+.highlight .nb {
+  color: #0086B3;
+}
+.highlight .nc {
+  color: #445588;
+  font-weight: bold;
+}
+.highlight .no {
+  color: #008080;
+}
+.highlight .nd {
+  color: #3c5d5d;
+  font-weight: bold;
+}
+.highlight .ni {
+  color: #800080;
+}
+.highlight .ne {
+  color: #990000;
+  font-weight: bold;
+}
+.highlight .nf {
+  color: #990000;
+  font-weight: bold;
+}
+.highlight .nl {
+  color: #990000;
+  font-weight: bold;
+}
+.highlight .nn {
+  color: #555555;
+}
+.highlight .nt {
+  color: #000080;
+}
+.highlight .vc {
+  color: #008080;
+}
+.highlight .vg {
+  color: #008080;
+}
+.highlight .vi {
+  color: #008080;
+}
+.highlight .nv {
+  color: #008080;
+}
+.highlight .ow {
+  color: #000000;
+  font-weight: bold;
+}
+.highlight .o {
+  color: #000000;
+  font-weight: bold;
+}
+.highlight .w {
+  color: #bbbbbb;
+}
+.highlight {
+  background-color: #f8f8f8;
+}
+</style>
+<style type="text/css">.MathJax_Hover_Frame {border-radius: .25em; -webkit-border-radius: .25em; -moz-border-radius: .25em; -khtml-border-radius: .25em; box-shadow: 0px 0px 15px #83A; -webkit-box-shadow: 0px 0px 15px #83A; -moz-box-shadow: 0px 0px 15px #83A; -khtml-box-shadow: 0px 0px 15px #83A; border: 1px solid #A6D ! important; display: inline-block; position: absolute}
+.MathJax_Menu_Button .MathJax_Hover_Arrow {position: absolute; cursor: pointer; display: inline-block; border: 2px solid #AAA; border-radius: 4px; -webkit-border-radius: 4px; -moz-border-radius: 4px; -khtml-border-radius: 4px; font-family: 'Courier New',Courier; font-size: 9px; color: #F0F0F0}
+.MathJax_Menu_Button .MathJax_Hover_Arrow span {display: block; background-color: #AAA; border: 1px solid; border-radius: 3px; line-height: 0; padding: 4px}
+.MathJax_Hover_Arrow:hover {color: white!important; border: 2px solid #CCC!important}
+.MathJax_Hover_Arrow:hover span {background-color: #CCC!important}
+</style><style type="text/css">#MathJax_About {position: fixed; left: 50%; width: auto; text-align: center; border: 3px outset; padding: 1em 2em; background-color: #DDDDDD; color: black; cursor: default; font-family: message-box; font-size: 120%; font-style: normal; text-indent: 0; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; z-index: 201; border-radius: 15px; -webkit-border-radius: 15px; -moz-border-radius: 15px; -khtml-border-radius: 15px; box-shadow: 0px 10px 20px #808080; -webkit-box-shadow: 0px 10px 20px #808080; -moz-box-shadow: 0px 10px 20px #808080; -khtml-box-shadow: 0px 10px 20px #808080; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}
+#MathJax_About.MathJax_MousePost {outline: none}
+.MathJax_Menu {position: absolute; background-color: white; color: black; width: auto; padding: 5px 0px; border: 1px solid #CCCCCC; margin: 0; cursor: default; font: menu; text-align: left; text-indent: 0; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; z-index: 201; border-radius: 5px; -webkit-border-radius: 5px; -moz-border-radius: 5px; -khtml-border-radius: 5px; box-shadow: 0px 10px 20px #808080; -webkit-box-shadow: 0px 10px 20px #808080; -moz-box-shadow: 0px 10px 20px #808080; -khtml-box-shadow: 0px 10px 20px #808080; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}
+.MathJax_MenuItem {padding: 1px 2em; background: transparent}
+.MathJax_MenuArrow {position: absolute; right: .5em; padding-top: .25em; color: #666666; font-size: .75em}
+.MathJax_MenuActive .MathJax_MenuArrow {color: white}
+.MathJax_MenuArrow.RTL {left: .5em; right: auto}
+.MathJax_MenuCheck {position: absolute; left: .7em}
+.MathJax_MenuCheck.RTL {right: .7em; left: auto}
+.MathJax_MenuRadioCheck {position: absolute; left: .7em}
+.MathJax_MenuRadioCheck.RTL {right: .7em; left: auto}
+.MathJax_MenuLabel {padding: 1px 2em 3px 1.33em; font-style: italic}
+.MathJax_MenuRule {border-top: 1px solid #DDDDDD; margin: 4px 3px}
+.MathJax_MenuDisabled {color: GrayText}
+.MathJax_MenuActive {background-color: #606872; color: white}
+.MathJax_MenuDisabled:focus, .MathJax_MenuLabel:focus {background-color: #E8E8E8}
+.MathJax_ContextMenu:focus {outline: none}
+.MathJax_ContextMenu .MathJax_MenuItem:focus {outline: none}
+#MathJax_AboutClose {top: .2em; right: .2em}
+.MathJax_Menu .MathJax_MenuClose {top: -10px; left: -10px}
+.MathJax_MenuClose {position: absolute; cursor: pointer; display: inline-block; border: 2px solid #AAA; border-radius: 18px; -webkit-border-radius: 18px; -moz-border-radius: 18px; -khtml-border-radius: 18px; font-family: 'Courier New',Courier; font-size: 24px; color: #F0F0F0}
+.MathJax_MenuClose span {display: block; background-color: #AAA; border: 1.5px solid; border-radius: 18px; -webkit-border-radius: 18px; -moz-border-radius: 18px; -khtml-border-radius: 18px; line-height: 0; padding: 8px 0 6px}
+.MathJax_MenuClose:hover {color: white!important; border: 2px solid #CCC!important}
+.MathJax_MenuClose:hover span {background-color: #CCC!important}
+.MathJax_MenuClose:hover:focus {outline: none}
+</style><style type="text/css">.MathJax_Preview .MJXf-math {color: inherit!important}
+</style><style type="text/css">.MJX_Assistive_MathML {position: absolute!important; top: 0; left: 0; clip: rect(1px, 1px, 1px, 1px); padding: 1px 0 0 0!important; border: 0!important; height: 1px!important; width: 1px!important; overflow: hidden!important; display: block!important; -webkit-touch-callout: none; -webkit-user-select: none; -khtml-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none}
+.MJX_Assistive_MathML.MJX_Assistive_MathML_Block {width: 100%!important}
+</style><style type="text/css">#MathJax_Zoom {position: absolute; background-color: #F0F0F0; overflow: auto; display: block; z-index: 301; padding: .5em; border: 1px solid black; margin: 0; font-weight: normal; font-style: normal; text-align: left; text-indent: 0; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; -webkit-box-sizing: content-box; -moz-box-sizing: content-box; box-sizing: content-box; box-shadow: 5px 5px 15px #AAAAAA; -webkit-box-shadow: 5px 5px 15px #AAAAAA; -moz-box-shadow: 5px 5px 15px #AAAAAA; -khtml-box-shadow: 5px 5px 15px #AAAAAA; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}
+#MathJax_ZoomOverlay {position: absolute; left: 0; top: 0; z-index: 300; display: inline-block; width: 100%; height: 100%; border: 0; padding: 0; margin: 0; background-color: white; opacity: 0; filter: alpha(opacity=0)}
+#MathJax_ZoomFrame {position: relative; display: inline-block; height: 0; width: 0}
+#MathJax_ZoomEventTrap {position: absolute; left: 0; top: 0; z-index: 302; display: inline-block; border: 0; padding: 0; margin: 0; background-color: white; opacity: 0; filter: alpha(opacity=0)}
+</style><style type="text/css">.MathJax_Preview {color: #888}
+#MathJax_Message {position: fixed; left: 1em; bottom: 1.5em; background-color: #E6E6E6; border: 1px solid #959595; margin: 0px; padding: 2px 8px; z-index: 102; color: black; font-size: 80%; width: auto; white-space: nowrap}
+#MathJax_MSIE_Frame {position: absolute; top: 0; left: 0; width: 0px; z-index: 101; border: 0px; margin: 0px; padding: 0px}
+.MathJax_Error {color: #CC0000; font-style: italic}
+</style><style type="text/css">.MJXp-script {font-size: .8em}
+.MJXp-right {-webkit-transform-origin: right; -moz-transform-origin: right; -ms-transform-origin: right; -o-transform-origin: right; transform-origin: right}
+.MJXp-bold {font-weight: bold}
+.MJXp-italic {font-style: italic}
+.MJXp-scr {font-family: MathJax_Script,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-frak {font-family: MathJax_Fraktur,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-sf {font-family: MathJax_SansSerif,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-cal {font-family: MathJax_Caligraphic,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-mono {font-family: MathJax_Typewriter,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-largeop {font-size: 150%}
+.MJXp-largeop.MJXp-int {vertical-align: -.2em}
+.MJXp-math {display: inline-block; line-height: 1.2; text-indent: 0; font-family: 'Times New Roman',Times,STIXGeneral,serif; white-space: nowrap; border-collapse: collapse}
+.MJXp-display {display: block; text-align: center; margin: 1em 0}
+.MJXp-math span {display: inline-block}
+.MJXp-box {display: block!important; text-align: center}
+.MJXp-box:after {content: " "}
+.MJXp-rule {display: block!important; margin-top: .1em}
+.MJXp-char {display: block!important}
+.MJXp-mo {margin: 0 .15em}
+.MJXp-mfrac {margin: 0 .125em; vertical-align: .25em}
+.MJXp-denom {display: inline-table!important; width: 100%}
+.MJXp-denom > * {display: table-row!important}
+.MJXp-surd {vertical-align: top}
+.MJXp-surd > * {display: block!important}
+.MJXp-script-box > *  {display: table!important; height: 50%}
+.MJXp-script-box > * > * {display: table-cell!important; vertical-align: top}
+.MJXp-script-box > *:last-child > * {vertical-align: bottom}
+.MJXp-script-box > * > * > * {display: block!important}
+.MJXp-mphantom {visibility: hidden}
+.MJXp-munderover {display: inline-table!important}
+.MJXp-over {display: inline-block!important; text-align: center}
+.MJXp-over > * {display: block!important}
+.MJXp-munderover > * {display: table-row!important}
+.MJXp-mtable {vertical-align: .25em; margin: 0 .125em}
+.MJXp-mtable > * {display: inline-table!important; vertical-align: middle}
+.MJXp-mtr {display: table-row!important}
+.MJXp-mtd {display: table-cell!important; text-align: center; padding: .5em 0 0 .5em}
+.MJXp-mtr > .MJXp-mtd:first-child {padding-left: 0}
+.MJXp-mtr:first-child > .MJXp-mtd {padding-top: 0}
+.MJXp-mlabeledtr {display: table-row!important}
+.MJXp-mlabeledtr > .MJXp-mtd:first-child {padding-left: 0}
+.MJXp-mlabeledtr:first-child > .MJXp-mtd {padding-top: 0}
+.MJXp-merror {background-color: #FFFF88; color: #CC0000; border: 1px solid #CC0000; padding: 1px 3px; font-style: normal; font-size: 90%}
+.MJXp-scale0 {-webkit-transform: scaleX(.0); -moz-transform: scaleX(.0); -ms-transform: scaleX(.0); -o-transform: scaleX(.0); transform: scaleX(.0)}
+.MJXp-scale1 {-webkit-transform: scaleX(.1); -moz-transform: scaleX(.1); -ms-transform: scaleX(.1); -o-transform: scaleX(.1); transform: scaleX(.1)}
+.MJXp-scale2 {-webkit-transform: scaleX(.2); -moz-transform: scaleX(.2); -ms-transform: scaleX(.2); -o-transform: scaleX(.2); transform: scaleX(.2)}
+.MJXp-scale3 {-webkit-transform: scaleX(.3); -moz-transform: scaleX(.3); -ms-transform: scaleX(.3); -o-transform: scaleX(.3); transform: scaleX(.3)}
+.MJXp-scale4 {-webkit-transform: scaleX(.4); -moz-transform: scaleX(.4); -ms-transform: scaleX(.4); -o-transform: scaleX(.4); transform: scaleX(.4)}
+.MJXp-scale5 {-webkit-transform: scaleX(.5); -moz-transform: scaleX(.5); -ms-transform: scaleX(.5); -o-transform: scaleX(.5); transform: scaleX(.5)}
+.MJXp-scale6 {-webkit-transform: scaleX(.6); -moz-transform: scaleX(.6); -ms-transform: scaleX(.6); -o-transform: scaleX(.6); transform: scaleX(.6)}
+.MJXp-scale7 {-webkit-transform: scaleX(.7); -moz-transform: scaleX(.7); -ms-transform: scaleX(.7); -o-transform: scaleX(.7); transform: scaleX(.7)}
+.MJXp-scale8 {-webkit-transform: scaleX(.8); -moz-transform: scaleX(.8); -ms-transform: scaleX(.8); -o-transform: scaleX(.8); transform: scaleX(.8)}
+.MJXp-scale9 {-webkit-transform: scaleX(.9); -moz-transform: scaleX(.9); -ms-transform: scaleX(.9); -o-transform: scaleX(.9); transform: scaleX(.9)}
+.MathJax_PHTML .noError {vertical-align: ; font-size: 90%; text-align: left; color: black; padding: 1px 3px; border: 1px solid}
+</style></head>
+<body data-gr-c-s-loaded="true"><div id="MathJax_Message" style="display: none;"></div>
+
+<title>CSCI 135 - Project 2</title>
+
+<h1 id="project-2-a-pronunciation-dictionary-app">Project 2. A Pronunciation Dictionary App</h1>
+
+<p><img src="./CSCI 135 - Project 2_files/h0intsp.png" alt="" class="centered"></p>
+
+<h2 id="introduction">Introduction</h2>
+
+<p>In this project you are going to implement a linguistic application that 
+uses a pronunciation dictionary for finding words with similar pronunciation.</p>
+
+<h3 id="example-you-enter-a-word-and-it-reports-similar-sounding-words">Example. You enter a word, and it reports similar-sounding words:</h3>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+&gt; donut
+
+Pronunciation    : D OW1 N AH2 T
+
+Identical        : DOUGHNUT
+Add phoneme      : DONUTS DONUTS' DOUGHNUTS
+Remove phoneme   : DON'T
+Replace phoneme  : DONAT DONATE
+
+</code></pre></div></div>
+
+<p>We are going to use <a href="http://www.speech.cs.cmu.edu/cgi-bin/cmudict">The CMU Pronouncing Dictionary</a> as our reference.
+It is available as a simply formatted plain text file, a direct link to it is: <a href="http://svn.code.sf.net/p/cmusphinx/code/trunk/cmudict/cmudict.0.7a">cmudict.0.7a</a></p>
+
+<p>An excerpt from it is shown below:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>PROGRAM  P R OW1 G R AE2 M
+PROGRAM'S  P R OW1 G R AE2 M Z
+PROGRAMME  P R OW1 G R AE2 M
+PROGRAMMER  P R OW1 G R AE2 M ER0
+PROGRAMMERS  P R OW1 G R AE2 M ER0 Z
+PROGRAMS  P R OW1 G R AE2 M Z
+PROGRAMS'  P R OW1 G R AE2 M Z
+PROGRESS  P R AA1 G R EH2 S
+PROGRESS(1)  P R AH0 G R EH1 S              
+PROGRESS(2)  P R OW0 G R EH1 S              
+PROGRESSED  P R AH0 G R EH1 S T
+PROGRESSES  P R AA1 G R EH2 S AH0 Z
+PUSH-UP  P UH1 SH AH2 P                     
+PUSH-UPS  P UH1 SH AH2 P S                  
+</code></pre></div></div>
+<p>In linguistics, a <a href="https://en.wikipedia.org/wiki/Phoneme">phoneme</a> is 
+a perceptually distinct units of sound that distinguishes one word from another, 
+for example p, b, d, and t in the English words “pad”, “pat”, “bad”, and “bat”.</p>
+
+<p>Each line of the dictionary file contains a <strong>word</strong> followed by the list of its <strong>phonemes</strong> (<code class="highlighter-rouge">P</code> <code class="highlighter-rouge">R</code> <code class="highlighter-rouge">OW1</code> <code class="highlighter-rouge">G</code> <code class="highlighter-rouge">R</code> <code class="highlighter-rouge">AE2</code> <code class="highlighter-rouge">M</code>). 
+Vowel phonemes, such as <code class="highlighter-rouge">OW</code> or <code class="highlighter-rouge">AE</code>, end with an additional digit <code class="highlighter-rouge">0</code>, <code class="highlighter-rouge">1</code>, or <code class="highlighter-rouge">2</code>, indicating the type of stress on that vowel 
+(no stress, primary stress, secondary stress). 
+If a word has multiple pronunciations, such alternatives are labeled with <code class="highlighter-rouge">(1)</code>, <code class="highlighter-rouge">(2)</code>, <code class="highlighter-rouge">(3)</code>, and so on
+(see the word <code class="highlighter-rouge">PROGRESS</code> in the example above).
+Comment lines start with triple semicolons (these lines can be ignored).
+For more information about the dictionary file formatting, read its web page referenced above.</p>
+
+<p><br>
+For this project, to make the task easier,
+your program should <strong>ignore all words that contain non-alphabetic characters</strong>, 
+and also <strong>ignore all alternative pronunciations</strong>, 
+The only non-letter character that is <strong>allowed</strong> in a word is <strong>apostrophe</strong> <code class="highlighter-rouge">'</code>.</p>
+
+<p>So, your program should ignore entries like:</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>PROGRESS(1)  P R AH0 G R EH1 S     &lt; ignore
+PROGRESS(2)  P R OW0 G R EH1 S     &lt; ignore
+PUSH-UP  P UH1 SH AH2 P            &lt; ignore
+PUSH-UPS  P UH1 SH AH2 P S         &lt; ignore
+%PERCENT  P ER0 S EH1 N T          &lt; ignore
+&amp;AMPERSAND  AE1 M P ER0 S AE2 N D  &lt; ignore
+</code></pre></div></div>
+
+<p>However, the following entries are considered good:</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>PROGRAM  P R OW1 G R AE2 M         &lt; good
+PROGRAM'S  P R OW1 G R AE2 M Z     &lt; good
+PROGRAMS'  P R OW1 G R AE2 M Z     &lt; good
+'BOUT  B AW1 T                     &lt; good
+</code></pre></div></div>
+
+<h2 id="programming-task">Programming Task</h2>
+
+<p>Write a program <code class="highlighter-rouge">pronounce.cpp</code> that</p>
+
+<ul>
+  <li>
+    <p>Lets the user input a word (let’s call the input word <em><strong>W</strong></em>).</p>
+  </li>
+  <li>
+    <p>If the word is not found in the dictionary, print “<strong>Not found</strong>”. Otherwise, report:</p>
+    <ul>
+      <li><code class="highlighter-rouge">Pronunciation    :</code> the pronunciation of the word <em>W</em> (as given in the dictionary),</li>
+      <li><code class="highlighter-rouge">Identical        :</code> other words from the dictionary with <strong>the same</strong> pronunciation as <em>W</em>,</li>
+      <li><code class="highlighter-rouge">Add phoneme      :</code> words that can be obtained from <em>W</em> by <strong>adding</strong> one phoneme,</li>
+      <li><code class="highlighter-rouge">Remove phoneme   :</code> words that can be obtained from <em>W</em> by <strong>removing</strong> one phoneme,</li>
+      <li><code class="highlighter-rouge">Replace phoneme  :</code> words that can be obtained from <em>W</em> by <strong>replacing</strong> one phoneme.</li>
+    </ul>
+  </li>
+</ul>
+
+<p>When listing words, include <em>all words from the dictionary</em> that meet the criteria, the order of listed words should be the same as
+they appear in the dictionary.</p>
+
+<p>Your program should expect that the dictionary file <code class="highlighter-rouge">cmudict.0.7a</code> is located in the current working directory.</p>
+
+<p>User input should be case-insensitive (accepting <code class="highlighter-rouge">donut</code>, <code class="highlighter-rouge">DONUT</code>, <code class="highlighter-rouge">DOnUt</code>, etc.)</p>
+
+<p>Please, don’t make complex user interface that allows multiple queries. The program should just ask for one word, report the answer, and exit.
+See examples below.</p>
+
+<div style="padding: 1em 3em 1em 3em;">
+<img src="./CSCI 135 - Project 2_files/TVYhZvU.png"> You are allowed to use only the constructs of the language that were mentioned in lecture slides and covered in class.
+For strings, you can use only the operations mentioned in class.
+</div>
+
+<h3 id="examples">Examples:</h3>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+&gt; accord
+
+Pronunciation    : AH0 K AO1 R D
+
+Identical        : ACORD
+Add phoneme      : ACCORD'S ACCORDS MCCORD RECORD
+Remove phoneme   : CHORD CORD
+Replace phoneme  : ABOARD ADORED AFFORD AWARD SCORED
+
+
+</code></pre></div></div>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+&gt; Ackerman
+
+Pronunciation    : AE1 K ER0 M AH0 N
+
+Identical        : ACKERMANN AKERMAN AKKERMAN
+Add phoneme      :
+Remove phoneme   : ACKMAN
+Replace phoneme  : ACKERSON ADERMAN AKERSON AMERMAN AMMERMAN 
+ANGERMAN ATTERMANN AUKERMAN ECKERMAN OCKERMAN
+
+</code></pre></div></div>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+&gt; DRAFT
+
+Pronunciation    : D R AE1 F T
+
+Identical        : DRAUGHT
+Add phoneme      : DRAFT'S DRAFTEE DRAFTER DRAFTS DRAFTY DRAUGHTS
+Remove phoneme   : DAFT RAFT
+Replace phoneme  : CRAFT DRIFT GRAFT KRAFFT KRAFT
+
+</code></pre></div></div>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+&gt; colonel's
+
+Pronunciation    : K ER1 N AH0 L Z
+
+Identical        : COLONELS KERNELS
+Add phoneme      : 
+Remove phoneme   : COLONEL KERNEL
+Replace phoneme  : CANALES JOURNAL'S JOURNALS KENNELS
+
+</code></pre></div></div>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+&gt; FLOWERS'
+
+Pronunciation    : F L AW1 ER0 Z
+
+Identical        : FLOURS FLOWERS
+Add phoneme      :
+Remove phoneme   : FLOUR FLOWER FOWERS
+Replace phoneme  : CLOWERS FLIERS FLOWERED FLOWERY FLUOR'S FLYERS
+
+</code></pre></div></div>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+&gt; Gorilla
+
+Pronunciation    : G ER0 IH1 L AH0
+
+Identical        : GUERILLA GUERRILLA
+Add phoneme      : GORILLAS GUERILLAS GUERRILLAS GUERRILLAS'
+Remove phoneme   : 
+Replace phoneme  : CHURILLA GUILLA KURILLA
+
+</code></pre></div></div>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+&gt; aLiGnEd
+
+Pronunciation    : AH0 L AY1 N D
+
+Identical        :
+Add phoneme      : MALIGNED UNLINED
+Remove phoneme   : ALIGN ALINE ALLIED LINED
+Replace phoneme  : AFFINED ALIGNS ALINES ASSIGNED BLIND
+
+</code></pre></div></div>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+&gt; allusion
+
+Pronunciation    : AH0 L UW1 ZH AH0 N
+
+Identical        :
+Add phoneme      : ALLUSIONS COLLUSION OCCLUSION
+Remove phoneme   :
+Replace phoneme  : ALEUTIAN ILLUSION
+
+</code></pre></div></div>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+&gt; design
+
+Pronunciation    : D IH0 Z AY1 N
+
+Identical        : 
+Add phoneme      : DESIGNED DESIGNER DESIGNS
+Remove phoneme   : 
+Replace phoneme  : DEFINE DESIRE DIVINE RESIGN
+
+</code></pre></div></div>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+&gt; drafty
+
+Pronunciation    : D R AE1 F T IY0
+
+Identical        : 
+Add phoneme      : 
+Remove phoneme   : DRAFT DRAUGHT RAFFETY
+Replace phoneme  : CRAFTY DRAFT'S DRAFTEE DRAFTER DRAFTS DRAUGHTS
+
+</code></pre></div></div>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+&gt; defer
+
+Pronunciation    : D IH0 F ER1
+
+Identical        :
+Add phoneme      : DEFERRED DEFERS DEFLEUR
+Remove phoneme   :
+Replace phoneme  : DEFOE DEFY DEMUR DETER DUFUR
+
+</code></pre></div></div>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+&gt; birb
+
+Not found
+
+</code></pre></div></div>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+&gt; PROGRESS(1)
+
+Not found
+
+</code></pre></div></div>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+&gt; ...ELLIPSIS
+
+Not found
+
+</code></pre></div></div>
+
+<h2 id="hint">Hint</h2>
+
+<p>For dividing a string into words, we can give you a helper function, which receives a string argument&nbsp;<code class="highlighter-rouge">s</code>, and 
+splits it <strong>into two strings on the very first space</strong> it finds within the string&nbsp;<code class="highlighter-rouge">s</code>:</p>
+
+<p><strong>Example:</strong> <br>
+<code class="highlighter-rouge">"Fortune favors the bold"</code> → <code class="highlighter-rouge">"Fortune"</code> and <code class="highlighter-rouge">"favors the bold"</code>.</p>
+
+<div class="language-c++ highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kt">void</span> <span class="nf">splitOnSpace</span><span class="p">(</span><span class="n">string</span> <span class="n">s</span><span class="p">,</span> <span class="n">string</span> <span class="o">&amp;</span> <span class="n">before</span><span class="p">,</span> <span class="n">string</span> <span class="o">&amp;</span> <span class="n">after</span><span class="p">)</span> <span class="p">{</span>
+  <span class="c1">// reset strings</span>
+  <span class="n">before</span> <span class="o">=</span> <span class="s">""</span><span class="p">;</span> 
+  <span class="n">after</span> <span class="o">=</span> <span class="s">""</span><span class="p">;</span>
+  <span class="c1">// accumulate before space</span>
+  <span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+  <span class="k">while</span> <span class="p">(</span><span class="n">i</span> <span class="o">&lt;</span> <span class="n">s</span><span class="p">.</span><span class="n">size</span><span class="p">()</span> <span class="o">&amp;&amp;</span> <span class="n">not</span> <span class="n">isspace</span><span class="p">(</span><span class="n">s</span><span class="p">[</span><span class="n">i</span><span class="p">]))</span> <span class="p">{</span> <span class="n">before</span> <span class="o">+=</span> <span class="n">s</span><span class="p">[</span><span class="n">i</span><span class="p">];</span> <span class="n">i</span><span class="o">++</span><span class="p">;</span> <span class="p">}</span>
+  <span class="c1">// skip the space</span>
+  <span class="n">i</span><span class="o">++</span><span class="p">;</span>
+  <span class="c1">// accumulate after space</span>
+  <span class="k">while</span> <span class="p">(</span><span class="n">i</span> <span class="o">&lt;</span> <span class="n">s</span><span class="p">.</span><span class="n">size</span><span class="p">())</span> <span class="p">{</span> <span class="n">after</span> <span class="o">+=</span> <span class="n">s</span><span class="p">[</span><span class="n">i</span><span class="p">];</span> <span class="n">i</span><span class="o">++</span><span class="p">;</span> <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div></div>
+<p>The two arguments passed by reference, <code class="highlighter-rouge">before</code> and <code class="highlighter-rouge">after</code>, will contain the two resulting halves of the string: before and after the space.</p>
+
+<h3 id="example">Example:</h3>
+<div class="language-c++ highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">string</span> <span class="n">line</span> <span class="o">=</span> <span class="s">"AAAA  BB CCC"</span><span class="p">;</span>
+<span class="n">string</span> <span class="n">beforeSpace</span><span class="p">;</span> 
+<span class="n">string</span> <span class="n">afterSpace</span><span class="p">;</span>
+<span class="n">splitOnSpace</span><span class="p">(</span><span class="n">line</span><span class="p">,</span> <span class="n">beforeSpace</span><span class="p">,</span> <span class="n">afterSpace</span><span class="p">);</span>
+</code></pre></div></div>
+
+<p>After the function call, the second and the third argument variables got updated with the following values:</p>
+<div class="language-c++ highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">beforeSpace</span> <span class="o">==</span> <span class="s">"AAAA"</span> <span class="c1">// contains everything before the first space</span>
+<span class="n">afterSpace</span>  <span class="o">==</span> <span class="s">" BB CCC"</span> <span class="c1">// contains everything after it</span>
+</code></pre></div></div>
+
+<p>Notice that since there were <strong>two spaces</strong> between <code class="highlighter-rouge">"AAAA"</code> and <code class="highlighter-rouge">"BB"</code> in the input string,
+after splitting on the first space character, the second space is preserved in the beginning of the variable <code class="highlighter-rouge">afterSpace</code> (also see the diagram below).</p>
+
+<p><img src="./CSCI 135 - Project 2_files/ocKDYBM.png" alt="" class="centered"></p>
+
+<p>If you wan to cut off that leading space, you can either write your own function for that, or actually, 
+you can call the same splitting function again on <code class="highlighter-rouge">afterSpace</code>.</p>
+
+<h2 id="how-to-submit-your-programs">How to submit your programs</h2>
+
+<h3 id="everything-should-be-submitted-through-gradescope">Everything should be submitted through Gradescope.</h3>
+<p>Upload only the source code (.cpp) files, not the compiled executables.   <br>
+Each program should start with a comment that contains your name and a short program description, for example:</p>
+
+<div class="language-c++ highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cm">/*
+Author: your name
+Course: CSCI-135
+Instructor: their name
+Assignment: title, e.g., Lab1A
+
+Here, briefly, at least in one or a few sentences
+describe what the program does.
+*/</span>
+</code></pre></div></div>
+
+<p><br></p>
+
+
+</body><span class="gr__tooltip"><span class="gr__tooltip-content"></span><i class="gr__tooltip-logo"></i><span class="gr__triangle"></span></span></html>
