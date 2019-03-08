@@ -1,6 +1,7 @@
 ## Phoneme Class Project
 
-*A C++ Class Project. *
+*A C++ Class Project.*
+
    This program uses the CMU Pronunciation Dictionary to find similarities 
 among the pronunciations of a given word and the words in the dictionary. 
 These comparisons extend for words whose pronunciations differ from the input 
