@@ -41,6 +41,7 @@ Input the word *donut*
 ``` 
 
 > A C++ Class Project.
+
 > Date: March 2018 - May 2018
 
  
