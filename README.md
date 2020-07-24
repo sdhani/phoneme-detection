@@ -1,15 +1,18 @@
-## Phoneme Class Project
-
-*A C++ Class Project.*
+# Phoneme Class Project
+> A C++ Class Project.
 
    This program uses the CMU Pronunciation Dictionary to find similarities 
 among the pronunciations of a given word and the words in the dictionary. 
+
+### Capabilities
+
 These comparisons extend for words whose pronunciations differ from the input 
-word by one additional phoneme *[Add Phoneme]*, one less phoneme *[Remove Phoneme]*, 
-or pronunciations with the same amount of phonemes as the input word, except with
-it contains one differing phoneme from the original word *[Replace Phoneme]*. 
-It also shows the pronunciation of the original word, as well as other words that 
-have an identical pronunciation to the input word. 
+word by: 
+   - [x] one additional phoneme *[Add Phoneme]* 
+   - [x] one less phoneme *[Remove Phoneme]*
+   - [x] pronunciations with the same amount of phonemes as the input word, with only one differing phoneme from the original word *[Replace Phoneme]*. 
+   - [x] pronunciation of the original word other words that 
+   - [x] pronunciation of words with identical pronunciation to the input word. 
 
 ### Instructions: 
 
@@ -20,12 +23,12 @@ have an identical pronunciation to the input word.
     
     `./a.out`
     
-3. **Now you may type any word into your terminal or shell and click enter to see 
-how its pronunciation compares to other words available in the CMU dictionary.**
+3. Open up your terminal and type any word into your terminal or shell. and click `ENTER` to see 
+how its pronunciation compares to other words available in the CMU dictionary.
 
-====================================================================================
-
-**Example Output**
+---
+```
+##### Example Output
 
 Input the word *donut*
 
@@ -36,7 +39,8 @@ Input the word *donut*
       Remove Phoneme: DON'T   
       Replace Phoneme: DONAT DONATE   
 
+``` 
 
-###### Date: March - May 2018
+> Date: March 2018 - May 2018
 
  
