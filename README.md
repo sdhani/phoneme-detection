@@ -39,7 +39,7 @@ Input the word *donut*
       Replace Phoneme: DONAT DONATE   
 
 ``` 
-
+---
 > A C++ Class Project.
 > Date: March 2018 - May 2018
 
