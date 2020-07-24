@@ -3,7 +3,7 @@
    This program uses the CMU Pronunciation Dictionary to find similarities 
 among the pronunciations of a given word and the words in the dictionary. 
 
-### Capabilities
+## Capabilities
 
 These comparisons extend for words whose pronunciations differ from the input 
 word by: 
@@ -13,7 +13,7 @@ word by:
    - [x] pronunciation of the original word other words that **`Pronounce Phoneme`**
    - [x] pronunciation of words with identical pronunciation to the input word. **`Identical Phoneme`**
 
-### Instructions: 
+## Instructions: 
 
 1. Download the cmudict.0.7a.txt and the pronounce.cpp application.
 2. Build the pronounce program using the following command in the terminal:
@@ -41,7 +41,6 @@ Input the word *donut*
 ``` 
 
 > A C++ Class Project.
-
 > Date: March 2018 - May 2018
 
  
