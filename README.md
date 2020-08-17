@@ -18,9 +18,10 @@ word by:
 1. Download the cmudict.0.7a.txt and the pronounce.cpp application.
 2. Build the pronounce program using the following command in the terminal:
 
-    `g++ pronounce.cpp`
-    
-    `./a.out`
+    ```bash
+    g++ pronounce.cpp
+    ./a.out
+    ```
     
 3. Open up your terminal and type any word into your terminal or shell. and click `ENTER` to see 
 how its pronunciation compares to other words available in the CMU dictionary.
